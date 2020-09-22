@@ -6,5 +6,6 @@ hpccm --recipe recipe.hpccm --format singularity --singularity-version=3.5 > Sin
 
 sudo singularity build Shapefile2GeoJSON.sif Singularity
 
-cp Shapefile2GeoJSON.sif /images
+mv Shapefile2GeoJSON.sif /images
 
+rm Singularity
