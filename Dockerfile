@@ -153,6 +153,8 @@ ADD ./config/remote.yaml /home/scitech/.singularity/
 RUN chown -R scitech: /home/scitech/.singularity && \
     chmod 600 /home/scitech/.singularity/remote.yaml
 
+RUN pip3 install geopandas folium
+
 USER scitech
 
 # ------------------------------
